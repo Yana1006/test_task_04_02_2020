@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Test</title><!-- Latest compiled and minified CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><!-- Optional theme-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"><!-- Latest compiled and minified JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </head>
+<body>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <p class="arrow_right" aria-hidden="true">&gt;</p>
+            <p class="tittle_back-text" id="exampleModalLabel">Carello</p> 
+          </button>
+        </div>
+        
+        <div class="modal-body">
+
+          <div id="product1_basket" class="product_in_basket">
+            <img class="image_product" src="img/1_product.png" alt="">
+            <div class="product_in_basket-description">
+              <p>offerta</p>
+              <p>fizzyslim con sapore di</p>
+              <p>Pineapple</p>
+              <p>QTA:</p>
+              
+              <div class="number">
+                <span class="minus">-</span>
+                <input class="basket_count" type="text" value="0" size="5"/>
+                <span class="plus">+</span>
+              </div>
+
+              <p class="price">€ 25.50</p>
+            </div>
+          </div>
+
+          <div id="product2_basket" class="product_in_basket">
+            <img class="image_product" src="img/2_product.png" alt="">
+            <div class="product_in_basket-description">
+              <p>offerta</p>
+              <p>fizzyslim con sapore di</p>
+              <p>Berries</p>
+              <p>QTA: 3</p>
+
+              <div class="number">
+                <span class="minus">-</span>
+                <input class="basket_count" type="text" value="0" size="5"/>
+                <span class="plus">+</span>
+              </div>
+
+              <p class="price">€ 0</p>
+            </div>
+          </div>
+
+          <div id="product3_basket" class="product_in_basket">
+            <img class="image_product" src="img/3_product.png" alt="">
+            <div class="product_in_basket-description">
+              <p>offerta</p>
+              <p>fizzyslim con sapore di</p>
+              <p>Grapefruit</p>
+              <p>QTA: 3</p>
+
+              <div class="number">
+                <span class="minus">-</span>
+                <input class="basket_count" type="text" value="0" size="5"/>
+                <span class="plus">+</span>
+              </div>
+
+              <p class="price">€ 0</p>
+            </div>
+          </div>
+
+          <div id="product4_basket" class="product_in_basket">
+            <img class="image_product" src="img/4_product.png" alt="">
+            <div class="product_in_basket-description">
+              <p>offerta</p>
+              <p>fizzyslim con sapore di</p>
+              <p>Apple</p>
+              <p>QTA: 3</p>
+
+              <div class="number">
+                <span class="minus">-</span>
+                <input class="basket_count" type="text" value="0" size="5"/>
+                <span class="plus">+</span>
+              </div>
+
+              <p class="price">€ 0</p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="block_summa">
+          <div class="summa">
+            <p>Subtotale</p>
+            <p id="price_total">€ 0</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn  btn_shopping">Visualizza Carrello</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+      <div class="row">
+          <div class="desk col-md-12">
+              <p><img src="img/desk2.png" alt=""></p>
+          </div>
+      </div>
+      <div class="tittle_text row">
+          <p>Cassa</p>
+      </div>
+      <div class="row">
+          <div id="product1" class="product col-md-3">
+              <p class="product_name">Pineapple</p>
+              <p><img src="img/1_product.png" alt=""></p>
+              <div class="text_under_image">
+                  <p>OFFERTA LIMITATA -50%</p>
+                  <p class="product_price">$8.50 <sup class="text_line-through">19.00$</sup></p>
+            
+                  <div id="custom_dropdown1" class="btn custom_dropdown">
+                      <span class="value_holder">3</span>
+                      <img class="buy_more" src="img/arrow.png" alt="">
+                  </div>
+                  <button type="button" class="buy_button">
+                      <img class="button_onclick" src="img/buy.png" alt="ОК">
+                  </button>
+              </div>
+          </div>
+          <div id="product2" class="product col-md-3">
+              <p class="product_name">Berries</p class="product_name">
+              <p><img src="img/2_product.png" alt=""></p>
+              <p>OFFERTA LIMITATA -50%</p>
+              <p class="product_price">$8.50 <sup class="text_line-through">19.00$</sup></p>
+              
+              <div id="custom_dropdown2" class="btn custom_dropdown">
+                <span class="value_holder">3</span>
+                <img class="buy_more" src="img/arrow.png" alt="">
+            </div>
+            <button type="button" class="buy_button">
+                <img class="button_onclick" src="img/buy.png" alt="ОК">
+            </button>
+          </div>
+          
+          <div id="product3" class="product col-md-3">
+              <p class="product_name">Grapefruit</p class="product_name">
+              <p><img src="img/3_product.png" alt=""></p>
+              <p>OFFERTA LIMITATA -50% </p>
+              <p class="product_price">$8.50 <sup class="text_line-through">19.00$</sup></pclass="product_name">
+
+              <div id="custom_dropdown3" class="btn custom_dropdown">
+                <span class="value_holder">3</span>
+                <img class="buy_more" src="img/arrow.png" alt="">
+            </div>
+            <button type="button" class="buy_button">
+                <img class="button_onclick" src="img/buy.png" alt="ОК">
+            </button>
+          </div>
+
+          <div  id="product4" class="product col-md-3">
+              <p class="product_name">Apple</p class="product_name">
+              <p><img src="img/4_product.png" alt=""></p>
+              <p>OFFERTA LIMITATA -50%</p>
+              <p class="product_price">$8.50 <sup class="text_line-through">19.00$</sup></p>
+              
+              <div id="custom_dropdown4" class="btn custom_dropdown">
+                <span class="value_holder">3</span>
+                <img class="buy_more" src="img/arrow.png" alt="">
+              </div>
+            <button type="button" class="buy_button">
+                <img class="button_onclick" src="img/buy.png" alt="ОК">
+            </button>
+          </div>
+
+      </div>
+  </div>
+</body>
+</html>

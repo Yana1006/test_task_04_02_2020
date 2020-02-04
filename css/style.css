@@ -1,0 +1,247 @@
+@font-face {
+    font-family: "Evorgia";
+    src: url("../fonts/Evogria.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "GothamProBlack";
+    src: url("../fonts/bebasneueregular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Gilroy-ExtraBold";
+    src: url("../fonts/Gilroy-ExtraBold.otf");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Gilroy-Light";
+    src: url("../fonts/Gilroy-Light.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+body {
+    margin: 0;
+    text-align:center; /*For IE6 Shenanigans*/
+     background: url(../img/bg.png);
+
+  }
+.container{
+   margin-top: 20px;
+   width:1110px;
+}
+.tittle_text{
+    font-family: "Evorgia";
+    color: #fff;
+    font-size: 48px;
+}
+.product_name{
+    font-family: "GothamProBlack";
+    font-size: 36px;
+    
+}
+.product_price{
+    font-family: "GothamProBlack";
+    font-size: 60px;
+}
+.text_line-through{
+    text-decoration: line-through;
+    font-size: 24px;
+    vertical-align: super;
+}
+.product{
+    font-family: "GothamProBlack";
+    color: #fff;
+    font-size: 24px;
+    background-image: linear-gradient(transparent 40%, #8684842e 100%);
+    width: 255px;
+    height: 620px;
+    margin: 0 30px 0 0;
+}
+.product:last-child{
+    margin: 0;
+}
+.button_onclick:hover{
+    background-color: #ff8b24;
+    border-radius: 25px; 
+}
+.buy_button{
+    background-color: transparent;
+    border: none;
+    margin-left: 15px;
+}
+.buy_button:focus{
+    outline: none;
+}
+.desk{
+    position: absolute;
+    top: 450px;
+    z-index: 20;
+    left: 0;
+}
+.text_under_image{
+    margin-top: 20px;
+}
+.buy_more{
+    width: 15px;
+    margin: 10px;
+}
+.custom_dropdown{
+    position:relative;
+    cursor:pointer;
+    font-family: "GothamProBlack";
+    font-size: 24px;
+    height: 45px;
+    margin-bottom: 5px;
+    border-bottom: 3px solid #fff;
+    border-radius: 0;
+    margin-left: 40px;
+}
+.dropContainer{
+    font-family: "GothamProBlack";
+    font-size: 24px;
+    position: absolute;
+    left: -25px;
+    overflow-y: auto;
+    max-height: 180px;
+    width: 110px;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: none;
+    margin-top: 10px;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+::-webkit-scrollbar { width: 3px; height: 40px;}
+::-webkit-scrollbar-button { display: none; }
+::-webkit-scrollbar-track-piece { background-color: rgba(0, 0, 0, 0.1);}
+::-webkit-scrollbar-thumb { height: 40px; background-color: rgba(0, 0, 0, 0.4); border-radius: 3px;}
+.drop_option{
+    color: #fff;
+    padding: 12px 20px;
+}
+.drop_option:hover{
+  background-color: rgba(0, 0, 0, 0.4);
+  width:50px;
+  border-radius: 5px;
+}
+.btn {
+    background-color: transparent;
+    text-indent:0;
+    border:0;
+    display:inline-block;
+    height:20px;
+    line-height:20px;
+    width:60px;
+    text-decoration:none;
+    text-align:center;
+}
+.btn:hover {
+    color: #fff;
+}
+.btn:focus{
+    color: #fff;
+}
+.modal{
+    left: 100%;
+    width: 50%;
+}
+.modal:focus{
+    left:60%;
+    transition: all .5s ease-in-out;
+}
+.modal-header{
+    border:none;
+    background-color: #ff943d;
+    padding: 0;
+    height: 225px;
+    width: 100%;
+    display: flex;
+}
+.modal-content {
+    height: 100%;
+}
+.modal-dialog {
+    margin: 0 auto;
+}
+button.close {
+    display: flex;
+}
+.arrow_right{
+    font-family: "GothamProBlack";
+    font-weight: 100;
+    width: 30%;
+    font-size: 60px;
+    color: #fff;
+    text-shadow: none;
+}
+.tittle_back-text{
+    font-family: "GothamProBlack";
+    font-weight: 100;
+    font-size: 60px;
+    color: #fff;
+    width: 70%;
+}
+.close{
+    width: 100%;
+}
+.modal-footer {
+    text-align: center;
+    border: none;
+}
+.btn_shopping{
+    width: 300px;
+    height: 60px;
+    background-color: #faa21b;
+    color: #fff;
+    font-family: "Gilroy-ExtraBold";
+    text-transform: uppercase;
+}
+.btn_shopping:hover{
+   cursor: pointer; 
+}
+.btn_shopping:active{
+    border: none;
+    outline:none;
+    box-shadow: none;
+}
+.btn_shopping:focus{
+    border: none;
+    outline:none;
+}
+.modal-body {
+    padding: 35px;
+}
+.product_in_basket{
+    display: flex;
+    border-bottom: 1px solid grey;
+}
+.image_product{
+    width: 140px;
+    padding: 10px;
+}
+.product_in_basket-description{
+    font-family: "Gilroy-Light";
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 5%;
+    color: #111;
+}
+.price{
+    font-family: "Gilroy-ExtraBold";
+}
+.block_summa{
+    border-bottom: 1px solid grey;
+}
+.summa{
+    padding-left: 55px;
+    font-family: "Gilroy-Light";
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #111;
+    text-align: left;
+}
